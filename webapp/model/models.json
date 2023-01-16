@@ -1,0 +1,225 @@
+{
+    "details": [
+
+        {
+            "name": "Scooty",
+            "prdID":"XYZ-101",
+            "item": "Model-XYZ0",
+            "image": "https://www.bdstall.com/asset/product-image/giant_125679.jpg",
+            "price": "96000",
+            "color":"blue&white",
+            "qnt":2,
+                 
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+           
+        },
+        {
+            "image": "https://www.scootyblog.com/wp-content/uploads/2020/12/honda-dio-repsol-edition-price.jpg",
+            "name": "Scooty",
+            "prdID":"XYZ-102",
+            "item": "Model-XYZ1",
+            "price": "115000",
+            "color":"yellow&red",
+            "qnt":6,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://www.scootyblog.com/wp-content/uploads/2021/03/honda-grazia-sports-edition.jpg",
+            "name": "Scooty",
+            "prdID":"XYZ-103",
+            "item": "Model-XYZ2",
+            "price": "59000",
+            "color":"black&red",
+            "qnt":4,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://media.zigcdn.com/media/content/2021/Jan/rsz_grazia_sports_edition_sports_red_640x480.jpg",
+            "name": "Scooty",
+            "prdID":"XYZ-104",
+            "item": "Model-XYZ3",
+            "price": "34000",
+            "color":"black&red",
+            "qnt":7,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://muthoothonda.com/wp-content/uploads/2020/01/red.png",
+            "name": "Scooty",
+            "prdID":"XYZ-105",
+            "item": "Model-XYZ4",
+            "price": "150000",
+            "color":"meron-red",
+            "qnt":1,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://teja10.kuikr.com/cb1/news/Existing-Honda-CBR150R-outside-India_1.jpeg",
+            "name": "Sports",
+            "prdID":"ABC-2021",
+            "item": "Model-ABC1",
+            "price": "305000",
+            "color":"red",
+            "qnt":6,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://www.bikesrepublic.com/wp-content/uploads/2020/07/2021-honda-cbr250rr-price-specs-japan-250cc-15.jpg",
+            "name": "Sports",
+            "prdID":"ABC-2022",
+            "item": "Model-ABC2",
+            "price": "450000",
+            "color":"white&black",
+            "qnt":5,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://ic1.maxabout.us/autos/tw_india//H/2017/3/honda-cb500f.jpg",
+            "name": "Sports",
+            "prdID":"ABC-2023",
+            "item": "Model-ABC3",
+            "price": "180000",
+            "color":"black",
+            "qnt":4,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://www.motorbeam.com/wp-content/uploads/2017-Honda-CBR-250R-Malaysia-Black.jpg",
+            "name": "Sports",
+            "prdID":"ABC-2024",
+            "item": "Model-ABC4",
+            "price": "181000",
+            "color":"blue&white",
+            "qnt":9,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://jbspares.com/admin_area/product_images/new_vehicle/2076662.jpg",
+            "name": "Sports",
+            "prdID":"ABC-2025",
+            "item": "Model-ABC5",
+            "price": "73000",
+            "color":"blue&yellow",
+            "qnt":3,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://www.team-bhp.com/forum/attachments/motorbikes/1742354d1521190026-honda-launches-2018-cb-shine-sp-livo-dream-yuga-honda-livo.jpg",
+            "name": "Regular",
+            "prdID":"PQR-3011",
+            "item": "Model-PQR1",
+            "price": "48000",
+            "color":"blue",
+            "Desc":"The designendedst of the design ethos same as before. However, things125.",
+            "qnt":4
+        },
+        {
+            "image": "https://muthoothonda.com/wp-content/uploads/2019/12/IMPERIAL_RED_METALLIC-1.png",
+            "name": "Regular",
+            "prdID":"PQR-3012",
+            "item": "Model-PQR2",
+            "price": "56000",
+            "color":"red&black",
+            "qnt":2,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://www.drivespark.com/bikes-photos/modelsoverview/450x400/10/honda-cb-shine-review-design-and-style.jpg/3/x.pagespeed.ic.WXihbdMr2T.jpg",
+            "name": "Regular",
+            "prdID":"PQR-3013",
+            "item": "Model-PQR3",
+            "price": "100500",
+            "color":"HashColor",
+            "qnt":5,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+            },
+        {
+            "image": "https://motoroctane.com/wp-content/uploads/2020/01/CB-shine-BS6.jpg?x41931",
+            "name": "Regular",
+            "prdID":"PQR-3014",
+            "item": "Model-PQR4",
+            "price": "100000",
+            "color":"black&red",
+            "qnt":4,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        },
+        {
+            "image": "https://www.bikes4sale.in/pictures/default/honda-shine/honda-shine-640.jpg",
+            "name": "Regular",
+            "prdID":"PQR-3015",
+            "item": "Model-PQR5",
+            "price": "50000",
+            "color":"black",
+            "qnt":6,
+            "Desc":"The designendedst of the design ethos same as before. However, things125."
+        }
+       
+    ],
+
+    "motors": [{
+            "image": "https://media.zigcdn.com/media/content/2021/Jan/rsz_grazia_sports_edition_sports_red_640x480.jpg",
+            "name": "Scooty",
+            "price":2000,
+            "accessories":"helmet"
+            
+           
+            
+    },
+        {
+            "image": "https://media.zigcdn.com/media/content/2020/Jun/honda-cbr250rr-2018-red-launched-in-indonesia-front-quarter-12_560x420.jpg",
+            "name": "Sports",
+            "price":1000,
+            "accessories":"Glove"
+           
+        },
+        {
+            "image": "https://muthoothonda.com/wp-content/uploads/2019/12/IMPERIAL_RED_METALLIC-1.png",
+            "name": "Regular",
+            "price":500,
+            "accessories":"kneepads"
+           
+        }
+    ],
+    "motors1": [{
+        "image": "https://media.zigcdn.com/media/content/2021/Jan/rsz_grazia_sports_edition_sports_red_640x480.jpg",
+        "name": "Scooty",
+        "qnt":0
+        
+       
+        
+},
+    {
+        "image": "https://media.zigcdn.com/media/content/2020/Jun/honda-cbr250rr-2018-red-launched-in-indonesia-front-quarter-12_560x420.jpg",
+        "name": "Sports",
+        "qnt":0
+       
+    },
+    {
+        "image": "https://muthoothonda.com/wp-content/uploads/2019/12/IMPERIAL_RED_METALLIC-1.png",
+        "name": "Regular",
+        "qnt":0
+       
+    }
+],
+    "accessories":[
+        {
+        "helmate":1000,
+        "gloves":250,
+        "kneepads":200
+        }
+        
+
+    ],
+    "tickets":[
+        
+    ],
+    "salesByDay":[
+        
+        {
+            "date":"",
+            "Quantity":""
+            
+        }
+    ]
+
+}

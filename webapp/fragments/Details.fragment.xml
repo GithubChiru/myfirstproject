@@ -1,0 +1,71 @@
+<core:FragmentDefinition xmlns:control="sap.gantt.control"  xmlns:core="sap.ui.core" xmlns="sap.m">
+ 
+<Dialog >
+ <Table items="{model4>/tableItem}" selectionChange="onRowSelect" id="tabId1">
+
+							   <columns>
+							       <Column >
+
+								   <Label text="Model"></Label>
+							
+							       </Column>
+								    <Column >
+
+								   <Label text="Details"></Label>
+							
+							       </Column>		
+								    <Column >
+
+								   <Label ></Label>
+							
+							       </Column>					
+							   </columns>
+
+
+							   <items>
+							       
+								   <ColumnListItem >
+								          <cells>
+										       <Image height="300px" width="300px" src="{model4>image}" ></Image>
+											     <!-- <Text  text="{model3>price}"></Text>
+                         	<Text  text="{model3>price}"></Text> -->
+                           <List >
+                            <items>
+                             <ObjectListItem title="Model-Name:{model4>item}"  number="Price:{model4>price}" numberUnit="INR" >
+                     <attributes>
+                    <ObjectAttribute text="Product-Type:{model4>name}"/>
+                    <ObjectAttribute text="Product-ID:{model4>prdID}"/>
+                    <ObjectAttribute text="Color:{model4>color}"/>
+                     <ObjectAttribute text="Description:{model4>Desc}"/>
+                  
+                    <!-- <ObjectAttribute text="Product-Pricee:{model3>price}"/> -->
+
+                    </attributes>
+                   
+                    </ObjectListItem>
+                            </items>
+                           </List>
+											   
+										       <!-- <Button text="Details" press="onRequest"></Button> -->
+										  
+										       </cells>
+                           <cells>
+										       <!-- <Image height="300px" width="300px" src="{model3>image}" ></Image> -->
+											     
+												
+										       <!-- <Button text="Details" press="onRequest"></Button> -->
+										  
+										       </cells>
+								   
+								   
+								   </ColumnListItem>
+								   
+							   
+							   </items>
+														
+							</Table>
+<buttons>
+<Button text="Close" type="Reject" press="onCloseDetails"></Button>
+</buttons>
+</Dialog> 
+</core:FragmentDefinition>

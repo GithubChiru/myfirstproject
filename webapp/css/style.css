@@ -1,0 +1,77 @@
+/* Enter your custom styles here */
+.total 
+{
+    color: black;
+    font-size: larger;
+    margin-left: 600px;
+    padding-top: 20px;
+}
+.downloadBtn
+{
+    float: right;
+}
+.titleLogin
+{
+    color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 630px;
+    margin-top: 180px;
+}
+.submitBtn
+{
+    
+    /* background-color: red; */
+    margin-left: 120px;
+    margin-top: 15px;
+    width:20%;
+    
+}
+.titlePage
+{
+    /* height: 50px; */
+    text-align:center;
+    float: inline-start;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 500px;
+    
+}
+.titleMainPage
+{
+    text-align:center;
+    float: inline-start;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 500px;
+}
+.titlePRDPage
+{
+   
+    text-align:center;
+    float: inline-start;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 350px; 
+}
+.prdTitle
+{
+    text-align:center;
+    float: inline-start;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 500px; 
+}
+

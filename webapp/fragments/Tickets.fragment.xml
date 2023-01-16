@@ -1,0 +1,68 @@
+<core:FragmentDefinition xmlns:control="sap.gantt.control"  xmlns:core="sap.ui.core" xmlns="sap.m">
+ 
+<Dialog >
+
+
+  <Title text="GENERATED-NEW-TICKETS"></Title>
+				 <Table id="idSimple11" mode="SingleSelect"  itemPress="onRowSelect"  items="{/tickets}" >
+
+							   <columns >
+							       <Column >
+
+								   <Label text="PRODUCT-CATEGORY"></Label>
+							
+							       </Column>
+								    <Column >
+
+								   <Label text="PRODUCT-NAME"></Label>
+							
+							       </Column>
+								    <Column >
+
+								   <Label text="PRODUCT-MODEL"></Label>
+							
+							       </Column>						
+								    <Column >
+
+								   <Label text="PRODUCT-QUANTITY"></Label>
+							
+							       </Column>
+								   	<Column >
+
+								   <Label text="ACCEPT"></Label>
+							
+							       </Column>
+								   <Column >
+
+								   <Label text="DELETE"></Label>
+							
+							       </Column>
+
+							   </columns>
+
+
+							   <items >
+							       
+								   <ColumnListItem >
+								          <cells >
+										       <!-- <Text text="{prdName}" ></Text> -->
+										       <Text text="{ingrd1}" ></Text>
+											    <Text  text="{ingrd2}"></Text>
+												<Text text="{ingrd3}"></Text>
+												<Text text="{ingrd4}"></Text>
+												<Button text="Accept" type="Accept" icon="sap-icon://accept" id="acc1" press="onAccept"></Button>
+												<Button text="Delete" type="Reject" icon="sap-icon://delete" id="del1" press="onRowSelect"></Button>
+										  </cells>
+								   
+								   
+								   </ColumnListItem>
+								   
+							   
+							   </items>
+														
+							</Table>
+							<buttons>
+							<Button text="Close" type="Reject" press="onCloseTickets"></Button>
+							</buttons>
+</Dialog> 
+</core:FragmentDefinition>

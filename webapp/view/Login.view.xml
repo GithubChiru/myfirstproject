@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="Motor.additional1.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:tab="sap.ui.table"
+	xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"	
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page">
+				<headerContent>
+        <Title class="titlePage" text="SHOW ROOM APPLICATION "></Title>
+       </headerContent>
+				<content >
+        <Title class="titleLogin" text="Login"></Title>
+          <form:SimpleForm editable="true">
+            <form:title>
+            </form:title>
+              <form:content>
+                <Label text="Username" width="50%" id="_label0"/>
+                <Input value="" width="50%" id="input0" change="onUsername" />
+                <Label text="Password" width="50%" id="_label1"/>
+                <Input value="" type="Password" width="50%" id="input1" change="onPassword"/>
+                <Label> </Label>
+                </form:content>
+            <Button width="20%" class="submitBtn" type="Emphasized"  text="Submit" press="onLogin"> </Button>
+            </form:SimpleForm>
+          </content >
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

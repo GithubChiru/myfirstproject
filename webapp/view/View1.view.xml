@@ -1,0 +1,200 @@
+<mvc:View
+    controllerName="Motor.additional1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:tab="sap.ui.table"
+	xmlns:f="sap.ui.layout.form"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page">
+				<headerContent>
+				<Title class="titleMainPage" text="SALES"></Title>
+		        <Button icon="sap-icon://log" type="Default" press="onHome1"></Button>
+		        </headerContent>
+				     <content>
+					 	<IconTabBar
+		                    id="idIconTabBarMulti"
+		                     expanded="{device>/isNoPhone}"
+		                    class="sapUiResponsiveContentPadding">
+		    <items>
+			<IconTabFilter  text="Over-View" icon="sap-icon://tools-opportunity">
+			<!-- this tab for chart -->
+				  <mvc:XMLView viewName="Motor.additional1.view.Chart"></mvc:XMLView>
+                    <List items="{model8>/lastSoldProducts}" headerText="LAST THREE SOLD ITEMS">
+					 <ObjectListItem  title="{model8>prdID}" intro="{model8>name}"  number="{model8>price}/-" numberUnit="INR">
+	                </ObjectListItem> 
+                    </List>	  
+			</IconTabFilter>
+			<IconTabFilter
+				text="Product" icon="sap-icon://product"
+				key="attachments">		
+	    <SearchField class="searchField" search="onSearch"  width="100%" liveChange="onSearch" enableSuggestions="true" suggest="onSuggest" suggestionItems="{/details}">
+		<suggestionItems>
+		 <SuggestionItem text="name" key="{name}" description="{name}"></SuggestionItem>
+		</suggestionItems>
+		</SearchField>
+
+				 <!--master details for products  -->
+	 <SplitApp >
+	<masterPages>
+	 <List id="idList" items="{/motors}" mode="SingleSelectMaster" selectionChange=" onSelectItems">
+					<items>
+					<ObjectListItem title="{name}" icon="{image}">
+					</ObjectListItem>
+					</items>
+					</List>
+	</masterPages>
+	<detailPages>
+	     <!-- table for products in details page -->
+		<Table items="{model2>/selectedItem}" mode="MultiSelect" selectionChange="onRowSelect" id="tabId">
+							   <columns>
+							       <Column >
+								   <Label text="Model"></Label>
+							       </Column>
+								    <Column >
+								   <Label text="Details"></Label>
+							       </Column>		
+								   <Column >
+								    <Button text="ADD TO BILL" type="Emphasized" icon="sap-icon://add"  press="onBill"></Button>
+								   </Column>
+							   </columns>
+							   <items>
+								   <ColumnListItem >
+								    <cells>
+								<Image height="65px" width="65px" src="{model2>image}" ></Image>
+                             <List >
+                             <items>
+                             <ObjectListItem   number="Price:{model2>price}" numberUnit="INR" >
+                     <attributes>
+                    </attributes>
+                    </ObjectListItem>
+                            </items>
+                           </List>
+						   	 <Button type="Transparent" text="Info"  press="onRequest"></Button>		   				  
+						   </cells>
+                           <cells>				  
+						  </cells>
+					   </ColumnListItem>
+					   </items>													
+							</Table>
+	</detailPages>
+	</SplitApp>	
+			</IconTabFilter>
+			<!-- billing tab -->
+			<IconTabFilter text="Billing" icon="sap-icon://receipt">
+			 <ToolbarSpacer />
+		  <MultiComboBox width="300px"  textAlign="Center" id="m11" placeholder="select accessories" items="{/motors}" selectionFinish="handleSelectionFinish">
+		  <items>
+		  <core:Item key="{price}"  text="{accessories}-{price}" id="m1" ></core:Item>
+		  </items>
+		 </MultiComboBox>
+		 		<!--table for showing selected products in billing page  -->
+				<!-- <Table items="{model3>/tableItem}" width="100%"  id="tabId1"  delete="onDelete" mode="MultiSelect" selectionChange="onRowSelect2">
+
+							   <columns>
+							       <Column >
+
+								   <Label text="Model"></Label>
+							
+							       </Column>
+								    <Column >
+
+								   <Label text="Details"></Label>
+							
+							       </Column>	
+							   </columns>
+							   <items>
+							    
+								<ColumnListItem >
+								<cells>
+								<Image height="55px" width="50px" src="{model3>image}" ></Image>			    
+                             <List >
+                            <items>
+                             <ObjectListItem title="{model3>item}"  number="{model3>price}" numberUnit="INR" >
+                     <attributes>
+                    <ObjectAttribute text="{model3>name}"/>
+                    <ObjectAttribute text="{model3>prdID}"/>
+                    <ObjectAttribute text="{model3>color}"/>
+                    
+                    </attributes>
+					
+                    </ObjectListItem>
+					
+                          </items>
+                           </List>		  
+						</cells>
+                           
+		          </ColumnListItem>
+							   </items>					
+							</Table> -->
+
+							<!--table for showing selected products in billing page  -->
+			<tab:Table rows="{model3>/tableItem}"  id="idTable" visibleRowCount="3" selectionMode="Single" rowSelectionChange="selectedRow" >
+				 <tab:columns>
+				  <tab:Column>
+				   <tab:label>
+				    <Label text="IMAGE" textAlign="Center"></Label>
+				</tab:label>
+			 	 <tab:template>
+				   <Image src="{model3>image}" width="90px" height="90px"></Image>
+				 </tab:template>
+				 </tab:Column>
+				  <tab:Column>
+				    <tab:label>
+				     <Label text="{i18n>XBUT_MODEL}" textAlign="Center"></Label>
+				    </tab:label>
+				    <tab:template>
+				      <Text text="{model3>prdID}" textAlign="Center"></Text>
+				    </tab:template>
+				  </tab:Column>
+				   <tab:Column>
+				    <tab:label>
+				     <Label text="{i18n>XLBL_PRODUCT_ID}" textAlign="Center"></Label>
+				    </tab:label>
+				    <tab:template>
+				      <Text text="{model3>item}" textAlign="Center"></Text>
+				    </tab:template>
+				  </tab:Column>
+				   <tab:Column>
+				    <tab:label>
+				     <Label text="{i18n>XLBL_CATEGORY}" textAlign="Center"></Label>
+				    </tab:label>
+				    <tab:template>
+				      <Text text="{model3>name}" textAlign="Center"></Text>
+				    </tab:template>
+				  </tab:Column>
+				<tab:Column>
+				   <tab:label>
+				    <Label text="{i18n>XLBL_PRICE}" textAlign="Center"></Label>
+				</tab:label>
+			 	 <tab:template>
+				  <Text text="Rs.{model3>price}/-" textAlign="Center"></Text>
+			     	
+				 </tab:template>
+				 </tab:Column>
+
+				 </tab:columns>
+				</tab:Table>
+					<Text class="total" width="100%" text="Total:Rs.{model7>/totalAmount}/-"></Text>
+					<ToolbarSpacer ></ToolbarSpacer>  <Button class="downloadBtn" text="Generate Bill" type="Emphasized" icon="sap-icon://download" press="printPDF"/>
+					<Label ></Label>
+			</IconTabFilter>
+			<!-- ticketing tab -->
+			<IconTabFilter text="Ticketing" icon="sap-icon://pushpin-on" >
+				  <mvc:XMLView viewName="Motor.additional1.view.Ticketing"></mvc:XMLView>
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+					</content>
+			  <footer >
+			 <OverflowToolbar />
+			</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

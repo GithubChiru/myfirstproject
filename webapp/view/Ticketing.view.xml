@@ -1,0 +1,99 @@
+<mvc:View
+    controllerName="Motor.additional1.controller.Ticketing"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:tab="sap.ui.table"
+	xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"
+	
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="" showHeader="false">
+				
+				<content>
+				 <!-- fORM FOR generating tickets -->
+                 <f:SimpleForm editable="true" id="idSimple1">
+                 <f:content>
+				 <Title text="GENERATE-NEW-TICKETS"  titleStyle="H4" textAlign="Initial"></Title>
+			    <Label text="PRODUCT-CATEGORY" width="50%" id="__labely"></Label>
+                 
+				 		 <ComboBox placeholder="select product-category" change="onCategory" width="300px"  items="{/motors}" id="input2">
+		                 <items>
+		                 <core:Item key="{name}" text="{name}"></core:Item>
+		                 </items>
+		                 </ComboBox>
+                 <Label text="PRODUCT-NAME" width="50%" id="__labelz"></Label>
+               
+			    <ComboBox placeholder="select productName" change="onProductName" width="300px" items="{/details}" id="input3" >
+		                 <items>
+		                 <core:Item key="{prdID}" text="{prdID}" ></core:Item>
+		                 </items>
+		                 </ComboBox>
+			    <Label text="PRODUCT-MODEL" width="50%" id="__label4"></Label>
+              
+			    <ComboBox placeholder="select product-model" width="300px" change="onProductModel" items="{/details}" id="input4">
+		                 <items>
+		                 <core:Item key="{item}" text="{item}"></core:Item>
+		                 </items>
+		                 </ComboBox>
+			    <Label text="PRODUCT-QUANTITY" width="50%" id="__label5"></Label>
+               <Input placeholder="enter quantity" change="onQuantity"  maxLength="30" width="300px" value="" type="Number" id="input5"></Input>
+                 <Label></Label>
+               <Button text="Submit" type="Emphasized" press="onClick" width="300px" validateFieldGroup="fieldValidation"></Button>
+               </f:content>
+                </f:SimpleForm>
+              <!-- table for status -->
+				 <Table id="idSimple" items="{/tickets}" mode="MultiSelect" selectionChange="onRowSelect">
+
+							   <columns >
+							       <Column >
+
+								   <Label text="PRODUCT-CATEGORY"></Label>
+							
+							       </Column>
+								    <Column >
+
+								   <Label text="PRODUCT-NAME"></Label>
+							
+							       </Column>
+								    <Column >
+
+								   <Label text="PRODUCT-MODEL"></Label>
+							
+							       </Column>						
+								    <Column >
+
+								   <Label text="PRODUCT-QUANTITY"></Label>
+							
+							       </Column>
+								   	<Column >
+
+								   <Label text="STATUS"></Label>
+							
+							       </Column>
+
+							   </columns>
+
+
+							   <items>
+							       
+								   <ColumnListItem  >
+								          <cells>
+										       <Text text="{ingrd1}" ></Text>
+											    <Text  text="{ingrd2}"></Text>
+												<Text text="{ingrd3}"></Text>
+												<Text text="{ingrd4}"></Text>
+												<Text text="{ingrd5}"></Text>
+										  </cells>
+								   </ColumnListItem>
+							   </items>					
+							</Table>
+				</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,72 @@
+<mvc:View xmlns:cards="sap.f.cards"
+    controllerName="Motor.additional1.controller.Production"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:tab="sap.ui.table"
+	xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"
+	
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page">
+				<headerContent>
+				<Title class="titlePRDPage" text="PRODUCTION"></Title>
+				<Button icon="sap-icon://filter" type="Emphasized" text="Newly-Generated-Tickets" press="onTicket"></Button>
+		        <Button icon="sap-icon://log" type="Default" press="onHome"></Button>
+		        </headerContent>
+				<content>
+				<Label ></Label>
+				 <Title class="prdTitle" text="PRODUCTS-CHART" titleStyle="H3" textAlign="Center"></Title>
+				 <VBox >
+
+				 <Table id="idSimple12" items="{/details}" width="100%">
+							   <columns >
+								<Column >
+								   <Label text="IMAGE"></Label>
+							       </Column>
+							       <Column >
+								   <Label text="{i18n>XLBL_PRODUCT-CATEGORY}"></Label>
+							       </Column>
+								    <Column >
+								   <Label text="{i18n>XLBL_PRODUCT-NAME}"></Label>
+							       </Column>
+								    <Column >
+								   <Label text="{i18n>XLBL_PRODUCT-MODEL}"></Label>
+							       </Column>						
+								    <Column >
+								   <Label text="{i18n>XLBL_PRODUCT-PRICE}"></Label>
+							       </Column>
+								   	<Column >
+								   <Label text="{i18n>XLBL_PRODUCT-QUANTITY}"></Label>
+							       </Column>
+								   <Column >
+								   <Label text="{i18n>XLBL_COLOR}"></Label>
+							       </Column>
+							   </columns>
+							   <items>
+								   <ColumnListItem>
+								          <cells>
+											   <Image src="{image}" height="30px" width="30px"></Image>
+										       <Text text="{name}" ></Text>
+											    <Text  text="{prdID}"></Text>
+												<Text text="{item}"></Text>
+												<Text text="{price}"></Text>
+												<Text text="{qnt}"></Text>
+												<Text text="{color}"></Text>
+										  </cells>
+								   </ColumnListItem>
+							   </items>	
+							</Table>
+							</VBox>
+				   <Label ></Label>
+				   <Label ></Label>
+				 <Label ></Label>							
+				</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
